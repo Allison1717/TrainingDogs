@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>TRAINING DOGS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedorFlex__TextoIcono">
+            <h1 class="contenedorFlex__TextoIcono__Contenido--Titulo centrar interlineado letraTitulo">TRAINING DOGS</h1>
+            <img id="imagenPerro" class="imagenCircular" src="../Assets/iconoPerro.png" alt="iconoPerro" height="100" width="100"> </a>
+        </div>
+        <nav id="barraNavegacion" class="centrar">
+            <ul class="textFooter">
+                <li class="interlineado opcionesNavegacion letraBarraNav"><a href="../index.html">Inicio</a></li>
+                <li class="opcionesNavegacion letraBarraNav"><a href="./quienes somos.html">¿Quiénes Somos?</a></li>
+                <li class="opcionesNavegacion letraBarraNav"><a href="./entrenamiento.html">Entrenamiento</a></li>
+                <li class="opcionesNavegacion letraBarraNav"><a href="./productos.html">Productos</a></li>              
+                <li class="opcionesNavegacion letraBarraNav"><a href="./contactanos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+        <!--Contáctenos-->
+        <h2 class="centrar bajar letraTipoEntrenamiento">✉ CONTÁCTENOS ✉</h2>
+        <div class="contenedorContactenos">
+            <form class="contenedorContactenos__formulario" action="" method="post">
+            <fieldset >
+                    <legend>Información del Contacto</legend>
+                        <div>
+                            <!--label for="Nombre">Ingrese su nombre:</label-->
+                            <input type="text" id="Nombre" placeholder="Nombres...">   
+                            
+                            <!--label for="Apellido">Ingrese su apellido:</label-->
+                            <input type="text" id="Apellido" placeholder="Apellidos...">
+                            <br>
+                            <br>
+                        </div>
+                        <div>
+                            <label for="email">Correo: </label>
+                            <input type="email" name="Correo" id="email" placeholder="ejemplo@hotmail.com">
+                            <label for="text">Seleccione: </label>
+                            <select name="género" id="Género">
+                                <option value=""> - - - - -</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Maculino">Masculino</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="Edad">Edad:</label>
+                            <input type="number" name="Edad" id="edad" placeholder="22">
+                        </div>        
+            </fieldset>  
+                <div>
+                    <br>
+                    <input type="checkbox" name="acepta" value="1">Guardar información para la próxima.                       
+                </div>  
+                    <textarea placeholder="Escribe un comentario o una consulta..."></textarea>
+                    <div class="contenedorFlex4">
+                        <input class="botonFormulario" type="submit" value="Enviar">
+                        <input class="botonFormulario" type="reset" value="Limpiar casillas">
+                    </div>                  
+            </form>
+    </div>
+    
+   <hr>
+   <footer>
+    <div class="contenedorFooter">
+        <a class="contenedorFooter__subcaja" href="../index.html"> <img id="logo" src="../Assets/logo.png" alt="logo" height="200"
+                width="200"></a>
+        <div class="contenedorFooter__subcaja">
+            <p class="textFooter">Sitio desarrollado por Allison Andrea Rodriguez Sanchez.</br>Correo Electrónico: <a class="textFooter--negro"
+                href="mailto:allisonandrea712@gmail.com">allisonandrea712@gmail.com</a></br>Teléfono: <a class="textFooter--negro" href="tel:+51 999888777">+51 951403432</a></p>
+        </div>            
+        <div class="contenedorFooter__subcaja">
+            <a href="../index.html"> <img id="fb" class="imagenCircular" src="../Assets/fb.png" alt="fb" height="35"
+                width="35"></a>
+        <a href="../index.html"> <img id="correo" class="imagenCircular" src="../Assets/correo.png"
+                alt="correo" height="35" width="35"></a>
+        <a href="../index.html"> <img id="huellitas" class="imagenCircular" src="../Assets/huellitas.png"
+                    alt="huellitas" height="30" width="30"></a>       
+        </div>      
+    </div>
+   </footer>
+</body>
