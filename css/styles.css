@@ -42,9 +42,10 @@ ul li{
     font-weight: bold;
     text-decoration:#b8b9b7;
     margin-bottom: 10px;    
+    transition: all 1s;
 }
 .letraBarraNav:hover{
-    background-color: yellow;
+    background-color: rgb(231, 218, 35);
     border-radius: 100%;
 }
 /*grid de la ventana INDEX*/
@@ -73,7 +74,11 @@ ul li{
     margin-bottom: 20px;
     width: 100%;
     height: 100%;
+    -webkit-animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both
 }
+
+@-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
 /*segunda parte del mainGrid*/
 .desProm{
     grid-area: desProm;
@@ -99,7 +104,15 @@ ul li{
    border-bottom: .5em dotted black;
    border-left: .5em dotted black;
    padding: 1em;
+   transition: all 1s;
+  
 }
+.foto:hover{
+    -webkit-animation:jello-vertical 1s both;animation:jello-vertical 1s both
+}
+ @-webkit-keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+
 .foto1{
     grid-area: foto1;
 }
@@ -197,7 +210,7 @@ textarea{
     font-family:Verdana,Helvetica;
     font-weight:bold;
     color:white;
-    background:#e77b16;
+    background:gray;
     border:5px;
     width:200px;
     height:50px;
@@ -205,9 +218,11 @@ textarea{
     font-size: 25px;
     margin: -20px 97px;
     cursor: pointer;
+    transition: all 2s;
 }
 .boton:hover{
-    background:#206dd1;
+    background:#000000;
+    transform: scale(1.2);
 }
 .botonFormulario{
     color:black;
@@ -219,9 +234,11 @@ textarea{
     font-size: 15px;
     margin: 48px 20px;
     cursor: pointer;
+    transition: all 2s;
 }
 .botonFormulario:hover{
     background-color: #e68b41;
+    transform: scale(1.2);
 }
 nav ul li{
     display: inline-block;
@@ -240,7 +257,12 @@ nav ul li{
     font-weight: normal;
     font-weight: 300;    
     color: #222225;
+    transition: all 0.5s;
 }
+.letraParrafoInicio:hover{
+    -webkit-animation:focus-in-contract-bck 0.5s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 0.5s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 .letraDescPromo{
     margin-bottom: 20px;      
     font-family: "Open Sans", cursive;
@@ -354,6 +376,7 @@ nav ul li{
     background-image: url("../Assets/fb.png");    
     width: 80px;
     height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
 }
 #correo{   
     text-align:right top;
@@ -361,6 +384,7 @@ nav ul li{
     background-image: url("../Assets/correo.png"); 
     width: 80px;
     height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
 }
 #huellitas{
     text-align:right top;
@@ -368,7 +392,9 @@ nav ul li{
     background-image: url("../Assets/huellitas.png");      
     width: 80px;
     height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
 }
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
 .contenedor{
     text-align: center;
     position: relative;
@@ -385,6 +411,8 @@ nav ul li{
     background-image: url("../Assets/fondoFormulario.jpg");
     border-radius: 15%;
     margin-left: 350px;
+    box-shadow: #e68b41 10px 10px 20px;
+    transition: all 3s;    
 }
 .contenedorContactenos__formulario{
     width:490px;
@@ -392,6 +420,11 @@ nav ul li{
     margin-top: 120px;
     margin-left: 8px;
 }
+.contenedorContactenos:hover{
+    transform: scale(1.1);
+    box-shadow: #206dd1 10px 10px 20px;
+}
+    
 .contenedor__parrafoInicio{
     width: 18m;
     display: flex;
@@ -488,6 +521,10 @@ nav ul li{
     margin:0px;
     text-align: center;
     font-size: 22px;
+    transition: all 2s;
+}
+.contenedorFlex__box:hover{
+    transform: scale(1.1) translateY(-5px);
 }
 /*subcajita de mapa y razas de perros*/
 .contenedorFlex2__box{
@@ -498,7 +535,11 @@ nav ul li{
     width: 500px;
     text-align: center;
     border-radius: 15%;
+    transition: all 2s;
+    -webkit-animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both
 }
+ @-webkit-keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
 /*caja de videos de la página ENTRENAMIENTOS*/
 .contenedorFlex3__box{
     margin-left: 20px;
@@ -507,14 +548,24 @@ nav ul li{
     border: .20cm solid #e68b41;
     border-radius: 20%;
     text-align: center;
+    transition: all 1s;
 }
+.contenedorFlex3__box:hover{
+    transform: scale(1.1);
+}
+
 /*sub caja de productos*/
 .contenedorFlex5__box{
-    margin-left: 3px;
+    margin-left: 10px;
     margin-right: 8px;
-    border: .15cm solid #206dd1;
     border-radius: 15%;
-    text-align: center;
+    box-shadow: #3f3f3f 5px 5px 20px;
+    text-align: center;  
+    transition: all 2s;
+}
+.contenedorFlex5__box:hover{
+    transform: scale(1.1);
+    border: .15cm solid #206dd1;
 }
 /*sub caja de productos categorias*/
 .contenedorFlex6__box{
@@ -523,9 +574,13 @@ nav ul li{
     margin-top: 30px;
     margin-bottom: 15px;
     width: 350px;
-    border: .15cm dotted #3f3f3f;
     border-radius: 15%;
     text-align: center;
+    box-shadow: #3f3f3f 5px 5px 20px;
+    transition: all 1s;
+}
+.contenedorFlex6__box:hover{
+    border: .15cm dotted #3f3f3f;
 }
 /*cambio de forma y color del borde de la sub cajita */
 .contenedorFlex__box__QS{
