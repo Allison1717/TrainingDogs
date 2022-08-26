@@ -1,0 +1,798 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav h1 ul li a:link, a:visited, a:active{
+    text-decoration:black;
+    color: black;
+}
+.header{
+    height: 150px;
+    width: 100%;
+    background-image: linear-gradient(to top,#837f7f,#c9fbff);
+    border-bottom: .2em solid #78CDBE;   
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+    z-index: 1;
+}
+#imagenPerro{
+    text-align:center top;
+    display: inline-flex; 
+    background-image: url("../Assets/iconoPerro.png");  
+    border: .2em solid #78CDBE;     
+    width: 80px;
+    height: 65px;
+}
+/*separción entre las opciones de navegación*/
+ul li{
+    margin-left: 25px;
+}
+#barraNavegacion{
+   list-style-type: none;
+   padding: 12em;
+   padding-block: 1em; 
+}
+.letraBarraNav{
+    font-style: normal;
+    font-size:large;   
+    font-family: "Open Sans", cursive;
+    font-weight: bold;
+    text-decoration:#b8b9b7;
+    margin-bottom: 10px;    
+    transition: all 1s;
+}
+.letraBarraNav:hover{
+    background-color: rgb(231, 218, 35);
+    border-radius: 100%;
+}
+/*grid de la ventana INDEX*/
+.mainGridInicio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 550px;
+    grid-template-areas:"fotoInicio"
+                        "desProm";
+}
+.fotoInicio{
+    grid-area: fotoInicio;
+    background-image: linear-gradient(to bottom,#e2d0be,#ffffff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*imagen de la portada*/
+.imagenInicio{
+    background-image: url("../Assets/fondoInicio.jpg");
+    background-size: cover;
+    border: .4em solid #815929;    
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    -webkit-animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both
+}
+
+@-webkit-keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes fade-in-top{0%{-webkit-transform:translateY(-50px);transform:translateY(-50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+/*segunda parte del mainGrid*/
+.desProm{
+    grid-area: desProm;
+    justify-content:center ;
+    text-align: center;
+    background-image: linear-gradient(to top,#e2d0be,#ffffff);
+}
+.desProm-Grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr;
+   grid-template-areas: " letraDescPromo letraDescPromo      letraDescPromo letraDescPromo"
+                        "foto1 foto2 foto3 foto4";
+}
+.foto{
+   width: 25m;
+   height: 20em;
+   margin:20px;
+   justify-content: center;
+   align-items: center;  
+   box-shadow: #3f3f3f 5px 5px 20px;
+   border-radius: 15%;
+   transition: all 1s;
+}
+.foto:hover{
+    -webkit-animation:jello-vertical 1s both;animation:jello-vertical 1s both
+}
+ @-webkit-keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+
+
+.foto1{
+    grid-area: foto1;
+}
+.foto2{
+    grid-area: foto2;
+}
+.foto3{
+    grid-area: foto3;
+}
+.foto4{
+    grid-area: foto4;
+}
+footer{
+    margin: 0% 0%;
+    padding: 0 0%;
+    margin: 0  auto;
+    width: 100%;
+    height: 100%;
+    grid-area: footer;  
+}
+/*grilla de la ventana QUIENES SOMOS*/
+.mainGridQuienesSomos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:"contenedorFlex"
+                        "contenedorFlex__TextoIcono "
+                        "contenedorFlex2";
+}
+.seccionUbicacion{
+    grid-area: seccionUbicacion;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+/*grilla de la ventana ENTRENAMIENTO*/
+.mainGridEntrenamiento{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "letraTipoEntrenamiento"
+    "letraCategoríaEntrenamiento"
+    "contenedorFlex3";
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    display: inline-block;  
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+h2{
+    margin-top: 40px;
+    margin-bottom: 20px;      
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 500;
+}
+h4{
+    margin-bottom: 32px;   
+    font-size: 2rem;
+    line-height: 2.5rem;       
+}
+legend {
+    display: block;
+    font-weight: bold;
+    color: white;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: initial;
+    border-image: initial;
+}
+label{
+    color:white;
+    font-weight: bold;
+}
+input{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px;
+}
+textarea{
+    height: 85px;
+    width: 490px;
+    border-width:2px;
+}
+.boton{
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background:gray;
+    border:5px;
+    width:200px;
+    height:50px;
+    display: inline-block;
+    font-size: 25px;
+    margin: -20px 97px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.boton:hover{
+    background:#000000;
+    transform: scale(1.2);
+}
+.botonFormulario{
+    color:black;
+    background:#78CDBE;
+    border: .1em solid gray;
+    width:130px;
+    height:40px;
+    display: inline-block;
+    font-size: 15px;
+    margin: 48px 20px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.botonFormulario:hover{
+    background-color: #e68b41;
+    transform: scale(1.2);
+}
+nav ul li{
+    display: inline-block;
+}
+.letraTitulo{
+    font-style: normal;
+    font-family: "Comics Sans",cursive;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    font-size:xx-large;
+}
+.letraParrafoInicio{  
+    margin-bottom: 20px;
+    background-color: #D8FDE0;          
+    font-family: "Brush Script MT", cursive;
+    font-weight: normal;
+    font-weight: 300;    
+    color: #222225;
+    transition: all 0.5s;
+}
+.letraParrafoInicio:hover{
+    -webkit-animation:focus-in-contract-bck 0.5s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 0.5s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+.letraDescPromo{
+    margin-bottom: 20px;      
+    font-family: "Open Sans", cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-shadow: 0 0 10px #e68b41;
+    color: #206dd1;
+}
+.letraUbicacion{
+    text-align: center;    
+    font-family: "Open Sans", cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-shadow: 0 0 10px #e68b41;
+    color: #206dd1;
+}
+.letraQuienesSomos{  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 3vw;
+    margin-right: 3vw;          
+    font-family: "Colibri", normal;
+    font-weight: normal;   
+    color: #222225;
+}
+.letraTipoEntrenamiento{
+    grid-area: letraTipoEntrenamiento;
+    text-align: center;
+    margin-bottom: 20px;  
+    margin-right: 60px;    
+    font-family: "Open Sans", cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-shadow: 0 0 10px #e68b41;
+    color: #206dd1;
+}
+.interlineado{
+    line-height: 1.6;
+}
+.interlineado2{
+    line-height: 2.5;
+}
+.textFooter{
+    text-align: center;
+    font-family: "Arial", serif;
+    color: white;
+    text-shadow: 0 0 12px black;
+    font-size:large;
+    padding-inline:8em;
+}
+.textFooter--negro{
+    color: black;
+}
+.centrar{
+    text-align: center;
+    justify-content: space-between;
+}
+.bajar{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    text-align: left;
+}
+
+.letraCategoríaEntrenamiento{      
+    width: 372px;
+    height: 52px;
+    margin-top: 30px;
+    margin-left: 10vw;
+    margin-right: 65vw;
+    background-color: #e68b41;
+    border: #e68b41;          
+    border-radius: 200%;
+    font-family: "Comics Sans",cursive;
+    font-weight: normal;
+    color: white;
+}
+.imagenCircular{
+    margin-right: 1vw;
+    width: 20%;
+    height: 50%;
+    border-radius: 60%;
+}
+#imagenMapa{
+    text-align:right;
+    display: inline-flex; 
+    background-image: url("../Assets/iconoMapa.jpg");     
+    width: 90px;
+    height: 80px;
+}
+#logo{  
+    text-align:left; 
+    display: inline-flexbox;
+    background-image: url("../Assets/logo.png");
+    width: 170px;
+    height: 150px;
+}
+#fb{
+    text-align:right top;
+    display: inline-flexbox;
+    background-image: url("../Assets/fb.png");    
+    width: 80px;
+    height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
+}
+#correo{   
+    text-align:right top;
+    display: inline-flexbox;
+    background-image: url("../Assets/correo.png"); 
+    width: 80px;
+    height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
+}
+#huellitas{
+    text-align:right top;
+    display: inline-flexbox;
+    background-image: url("../Assets/huellitas.png");      
+    width: 80px;
+    height: 80px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
+}
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+.contenedor{
+    text-align: center;
+    position: relative;
+}
+.contenedorContactenos{
+    text-align: center;
+    display: flex;
+    width:600px;
+    height: 500px;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 60px;
+    color:white;
+    background-image: url("../Assets/fondoFormulario.jpg");
+    border-radius: 15%;
+    margin-left: 350px;
+    box-shadow: #e68b41 10px 10px 20px;
+    transition: all 3s;    
+}
+.contenedorContactenos__formulario{
+    width:490px;
+    height: 600px;
+    margin-top: 120px;
+    margin-left: 8px;
+}
+.contenedorContactenos:hover{
+    transform: scale(1.1);
+    box-shadow: #206dd1 10px 10px 20px;
+}
+    
+.contenedor__parrafoInicio{
+    width: 18m;
+    display: flex;
+    flex-wrap: wrap;
+    border: .3em double #000000;    
+    padding: 0.5em;
+}
+
+/* caja grande usada para el footer*/
+.contenedorFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#837f7f,#c9fbff);
+}
+.contenedorFooter__subcaja{
+    height: 29vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* caja grande usada para el fondo de quienes somos*/
+.contenedorFlex{
+    background-color: #F4E285;
+    background-image: linear-gradient(to top,#F4E285,#ffff);
+    height: 70vh;
+    display: flex;
+    padding: 30px;
+}
+
+/*caja de mapa y razas de perros*/
+.contenedorFlex2{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+}
+/*caja grande para los videos de entrenamiento*/
+.contenedorFlex3{
+    width: 1349px;
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+/*caja grande para los videos de productos destacados*/
+.contenedorFlex5{
+    width: 1349px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/*caja grande categoría productos*/
+.contenedorFlex6{
+    width: 1349px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+/*caja botones productos*/
+.contenedorFlex4{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+/*caja para el título y a imagen del perrito*/
+
+.contenedorFlex__TextoIcono{
+    grid-area: contenedorFlex__TextoIcono;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contenedorFlex__TextoIcono__Contenido{
+    margin-left: 420px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 60px;
+    width: 420px;
+}
+.contenedorFlex__TextoIcono__Contenido--Titulo{
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+}
+/*sub cajita general/ caja de Quienes somos foto*/
+.contenedorFlex__box{
+    margin:0px;
+    text-align: center;
+    font-size: 22px;
+    transition: all 2s;
+}
+.contenedorFlex__box:hover{
+    transform: scale(1.1) translateY(-5px);
+}
+/*subcajita de mapa y razas de perros*/
+.contenedorFlex2__box{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 500px;
+    text-align: center;
+    border-radius: 15%;
+    transition: all 2s;
+    -webkit-animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both
+}
+ @-webkit-keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
+/*caja de videos de la página ENTRENAMIENTOS*/
+.contenedorFlex3__box{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 500px;
+    border: .20cm solid #e68b41;
+    border-radius: 20%;
+    text-align: center;
+    transition: all 1s;
+}
+.contenedorFlex3__box:hover{
+    transform: scale(1.1);
+}
+
+/*sub caja de productos*/
+.contenedorFlex5__box{
+    margin-left: 10px;
+    margin-right: 8px;
+    border-radius: 15%;
+    box-shadow: #3f3f3f 5px 5px 20px;
+    text-align: center;  
+    transition: all 2s;
+}
+.contenedorFlex5__box:hover{
+    transform: scale(1.1);
+    border: .15cm solid #206dd1;
+}
+/*sub caja de productos categorias*/
+.contenedorFlex6__box{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 350px;
+    border-radius: 15%;
+    text-align: center;
+    box-shadow: #3f3f3f 5px 5px 20px;
+    transition: all 1s;
+}
+.contenedorFlex6__box:hover{
+    border: .15cm dotted #3f3f3f;
+}
+/*cambio de forma y color del borde de la sub cajita */
+.contenedorFlex__box__QS{
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 41px;
+    margin-bottom: 50px;
+    width: 500px;
+    border: .2em dotted #3f3f3f;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+/*MEDIA QUERIE VENTANA INDEX*/
+
+/*PANTALLA 1024PX*/
+@media only screen and (max-width: 1024px) {
+
+    /*Ventana Quienes somos*/
+    .letraQuienesSomos {
+        margin: 22px;
+        font-size: smaller;
+        justify-content: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+    .contenedorFlex{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorFlex__box__QS {
+        margin: 10px;
+        width: 1000px; 
+        font-size: 22px;
+    }
+    /*Ventana index*/
+    .textFooter{
+        padding: 10px;
+        font-size:15px;
+    }
+    #logo{
+        margin: 15px;
+        width: 120px;
+        height: 120px;
+    }
+    #fb{
+        margin-left: 20px;
+        width: 70px;
+        height: 70px;
+    }
+      #correo{
+        width: 70px;
+        height: 70px;
+      }
+      #huellitas{
+       width: 70px;
+       height: 70px;
+      }
+    #barraNavegacion{
+        padding: 0;
+    }
+    .contenedor__parrafoInicio{
+        padding: 0;
+    }
+    .contenedorFooter{
+        margin: 0px;
+        grid-area: contenedorFooter;
+        padding: 1.5em;
+    }
+    .contenedorFooter__subcaja{
+        height: 21vh;
+    }
+    .mainGridInicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fotoInicio"
+            "desProm"
+            "contenedorFooter";
+    }
+    .desProm-Grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:auto;
+        grid-template-areas: " letraDescPromo letraDescPromo"
+                                "foto1 foto2"
+                                "foto3 foto4";
+        align-items: center;
+        justify-content: center;
+     }
+     main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+     }
+     main section {
+        min-width: 100vw;
+     }
+    
+}
+/*PANTALLA 425PX*/
+@media only screen and (max-width: 425px){
+    /*Ventana Quienes somos*/
+    .letraQuienesSomos{
+        margin: 15px;
+        font-size: smaller;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contenedorFlex__box__QS {
+        margin: 7px;
+        width: 380px;
+        font-size: 20px;
+    }
+    .contenedorFlex__box{
+        width: 410px;
+    }
+    .contenedorFlex2{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorFlex2__box{
+        width: 330px;
+        height: 330px ;
+    }
+    .contenedorFlex{
+        height: 400px;
+        width: 425px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainGridQuienesSomos {
+        margin: 0px;
+    }
+    /*Ventana Index*/
+    .interlineado2 {
+        line-height: 1.4;
+    }
+   .textFooter{
+    font-size: smaller;
+   }
+   .contenedorFlex__TextoIcono__Contenido--Titulo {
+    font-size: 25px;
+    }
+   h4 {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    }
+   #logo{
+     width: 120px;
+     height: 110px;
+   }
+   #fb{
+     width: 60px;
+     height: 60px;
+   }
+   #correo{
+     width: 60px;
+     height: 60px;
+   }
+   #huellitas{
+    width: 60px;
+    height: 60px;
+   }
+    .foto{
+        padding: 0.5em;
+    }
+    .contenedor__parrafoInicio{
+        padding: 0;
+    }
+    .contenedorFooter{
+        margin: 0px;
+        padding: 0.6em;
+        grid-area: contenedorFooter;
+        flex-wrap: wrap;
+    }
+    .contenedorFooter__subcaja{
+        height: 11vh;
+        margin-top: 0px;
+    }
+    .mainGridInicio{
+        margin:0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:"fotoInicio"
+                            "desProm"
+                            "contenedorFooter";
+    }
+    .desProm-Grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: " letraDescPromo"
+                                "foto1" 
+                                "foto2"
+                                "foto3"
+                                "foto4"
+                                "contenedorFooter";
+        align-items: center;
+        justify-content: center;
+     }
+     main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:5em;
+     }
+     main section {
+        min-width: 100vw;
+     }
+
+}
