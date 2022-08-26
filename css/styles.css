@@ -184,3 +184,59 @@ h2,h3{
     transform: scale(1.1);
     border: .10cm solid #206dd1;
 }
+/*ESTILO DEL BOTÓN DE FORMULARIO DE CONTÁCTENOS*/
+.botonFormulario{
+    background:#78CDBE;
+    border: .1em solid gray;
+    width:130px;
+    height:40px;
+    font-size: 15px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.botonFormulario:hover{
+    background-color: #e68b41;
+    transform: scale(1.2);
+}
+/*FONDO DEL FORMULARIO CONTACTENOS*/
+.bg-fondoContactenos{
+    width:600px;
+    height: 500px;
+    margin-bottom: 60px;
+    color:white;
+    background-image: url("../Assets/fondoFormulario.jpg");
+    border-radius: 15%;
+    margin-left: 350px;
+    box-shadow: #e68b41 10px 10px 20px;
+    transition: all 3s;    
+}
+/*ANIMACIÓN DEL FORMULARIO CONTACTENOS*/
+.bg-fondoContactenos:hover{
+    box-shadow: #206dd1 20px 20px 30px;
+}
+/*ESTILOS DEL FORMULARIO DE CONTACTENOS*/
+legend {
+    font-weight: bold;
+    color: white;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: initial;
+    border-image: initial;
+}
+label{
+    color:white;
+    font-weight: bold;
+}
+input{
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px;
+}
+textarea{
+    height: 80px;
+    width: 480px;
+    border-width:2px;
+}
