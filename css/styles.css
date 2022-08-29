@@ -167,7 +167,6 @@ h2,h3{
 }
 /*ESTILO DE LETRA DE CATEGORIA DE ENTRENAMIENTO*/
 .letraCategoríaEntrenamiento{     
-    text-align: center; 
     width: 250px;
     height: 52px;    
     background-color: #9BDC88;
