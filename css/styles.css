@@ -9,9 +9,11 @@
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
 }
-ul li:hover{
+ul li a:hover{
+    color:black !important;
     border-radius: 50%;
     background-image: linear-gradient(to bottom, #b55c5c, #c7725c, #d58a5d, #dda462, #e1bf6c, #dbcb70, #d3d777, #c8e381, #b5e381, #a1e283, #8ae287, #6fe18d);
+
 }
 /*FONDO PRODUCTOS*/
 .bg-fondoProductos{
@@ -57,15 +59,11 @@ h5{
     font-family: "Times New Roman", serif;
     font-weight: bold;
 }
-/*ESTILO DE LA CARD DEL INDEX*/
-.card{
-   transition: all 0.5s;
+
+/*ANIMACIÓN DE LOS BOTONES DE LAS CARD DEL INDEX*/
+.btn{
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
 }
-.card:hover{
-    -webkit-animation:jello-vertical 1s both;animation:jello-vertical 1s both
-}
-/*ANIMACIÓN DE LA CARD DEL INDEX*/
- @-webkit-keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-vertical{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}40%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}50%{-webkit-transform:scale3d(.85,1.15,1);transform:scale3d(.85,1.15,1)}65%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}75%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
 /*ID DEL ICONO DE FACEBOOK*/
 #fb{
     background-image: url("../Assets/fb.png");    
@@ -239,3 +237,107 @@ textarea{
     width: 480px;
     border-width:2px;
 }
+.btn{
+    height: 40px;
+    width: 170px;
+}
+/*MEDIA QUERY*/
+@media  (max-width: 575.98px) { 
+    .tam-mapa{
+        width: 519px;
+        height: 346px;
+    }
+    .letraQuienesSomos{
+        font-size: 12px;
+    }
+    .tam-letra-footer{
+        font-size: 12px;
+    }
+    #imagenMapa{
+        width: 50px;
+        height: 50px;
+    }   
+    .imagenInicio{
+        height: 80vh;
+    }
+    .letraParrafoInicio{
+        font-size: 12px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 140px;
+    }
+    .letraCategoríaEntrenamiento{
+        margin-left: 150px;
+    }
+    .video{
+        width: 350px;
+        height: 200px;
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+    .tam-mapa{
+        width: 600px;
+        height: 400px;
+     }
+    .imagenInicio{
+        height: 100vh;
+    }
+    .letraParrafoInicio{
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 170px;
+    }
+    .card{
+        height: 600px;
+        width: 500px;
+        margin-left: 120px;
+    }
+    .tam-letra-footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .imagen-quienes-somos{
+        width: 800px;
+        height: 300px;
+    }
+    .tam-mapa{
+        width: 350px;
+        height: 300px;
+     }
+    .tam-razas-perros{
+        width: 570px;
+        height: 300px;
+     }
+    .btn{
+        height: 40px;
+        width: 100px;
+    }
+    .imagenInicio{
+        height: 90vh;
+    }
+    .letraParrafoInicio{
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 170px;
+    }
+    .tam-letra-footer{
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+@media (min-width: 1199.98px) and (max-width: 1399.98px) { 
+    .imagenInicio{
+        height: 170vh;
+    }
+    .tam-mapa{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
