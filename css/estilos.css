@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap");
+@media (max-width: 575.98px) {
+  .card {
+    height: 500px;
+    width: 400px;
+    margin-left: 90px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .card {
+    height: 600px;
+    width: 500px;
+    margin-left: 120px; } }
+
+.btn {
+  height: 40px;
+  width: 170px;
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+  animation: pulsate-fwd 1s ease-in-out infinite both; }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .btn {
+    height: 40px;
+    width: 100px; } }
+
+header .navbar {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold; }
+
+header ul li a:hover {
+  color: black !important;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #b55c5c, #c7725c, #d58a5d, #dda462, #e1bf6c, #dbcb70, #d3d777, #c8e381, #b5e381, #a1e283, #8ae287, #6fe18d); }
+
+footer .fb, footer .correo, footer .huellitas {
+  background-image: url("../Assets/fb.png");
+  width: 80px;
+  height: 80px;
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+  animation: pulsate-fwd 1s ease-in-out infinite both; }
+
+footer .correo {
+  background-image: url("../Assets/correo.png"); }
+
+footer .huellitas {
+  background-image: url("../Assets/huellitas.png"); }
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@media (max-width: 575.98px) {
+  .tam-letra-footer {
+    font-size: 12px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .tam-letra-footer {
+    padding: 10px;
+    font-size: 12px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .tam-letra-footer {
+    padding: 15px;
+    font-size: 18px; } }
+
+.imagenInicio {
+  background-image: url("../Assets/fondoInicio.jpg");
+  background-size: cover;
+  border: .1em solid #815929;
+  height: 90vh;
+  -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+.letraParrafoInicio {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 400px;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 5s; }
+  .letraParrafoInicio:hover {
+    -webkit-animation: focus-in-contract-bck 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: focus-in-contract-bck 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+.bg-index {
+  background-image: linear-gradient(to top, #837f7f, #c9fbff); }
+  .bg-index .letraDescPromo {
+    margin-bottom: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    text-shadow: 0 7px 5px gray;
+    font-size: 3rem;
+    color: #206dd1; }
+
+@media (max-width: 575.98px) {
+  .imagenInicio {
+    height: 82vh; }
+  .letraParrafoInicio {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 140px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .imagenInicio {
+    height: 100vh; }
+  .letraParrafoInicio {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 170px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .imagenInicio {
+    height: 90vh; }
+  .letraParrafoInicio {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 170px; } }
+
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .imagenInicio {
+    height: 140vh; } }
+
+footer .fb, footer .correo, footer .huellitas {
+  background-image: url("../Assets/fb.png");
+  width: 80px;
+  height: 80px;
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+  animation: pulsate-fwd 1s ease-in-out infinite both; }
+
+footer .correo {
+  background-image: url("../Assets/correo.png"); }
+
+footer .huellitas {
+  background-image: url("../Assets/huellitas.png"); }
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@media (max-width: 575.98px) {
+  .tam-letra-footer {
+    font-size: 12px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .tam-letra-footer {
+    padding: 10px;
+    font-size: 12px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .tam-letra-footer {
+    padding: 15px;
+    font-size: 18px; } }

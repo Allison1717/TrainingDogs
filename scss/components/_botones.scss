@@ -1,0 +1,12 @@
+
+.btn{
+    height: 40px;
+    width: 170px;
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .btn{
+        height: 40px;
+        width: 100px;
+    }
+}

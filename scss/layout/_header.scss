@@ -1,0 +1,19 @@
+header{
+    .navbar{
+        font-family: $letra-roboto;
+        font-weight: bold;      
+    }
+    ul{
+        li{
+            a{
+                &:hover{
+                    color:black !important;
+                    border-radius: 50%;
+                    background-image: linear-gradient(to bottom, #b55c5c, #c7725c, #d58a5d, #dda462, #e1bf6c, #dbcb70, #d3d777, #c8e381, #b5e381, #a1e283, #8ae287, #6fe18d);
+                }  
+            }
+        }
+    } 
+
+    
+}

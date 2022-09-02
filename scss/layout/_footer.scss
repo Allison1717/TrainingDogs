@@ -1,0 +1,36 @@
+footer{
+    .fb{
+        background-image: url("../Assets/fb.png");    
+        width: $tam-icono-redes-sociales;
+        height: $tam-icono-redes-sociales;
+        -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both
+    }
+    .correo{   
+        @extend .fb;
+        background-image: url("../Assets/correo.png"); 
+    }
+    .huellitas{
+        @extend .fb;
+        background-image: url("../Assets/huellitas.png");      
+        
+    }
+    @-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+}
+@media  (max-width: 575.98px) { 
+    .tam-letra-footer{
+        font-size: 12px;
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+    .tam-letra-footer{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .tam-letra-footer{
+        padding: 15px;
+        font-size: 18px;
+    }
+}
