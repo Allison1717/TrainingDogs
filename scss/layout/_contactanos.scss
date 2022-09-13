@@ -1,0 +1,36 @@
+.bg-fondoContactenos{
+    width:600px;
+    height: 500px;
+    margin-bottom: 60px;
+    color:white;
+    background-image: url("../Assets/fondoFormulario.jpg");
+    border-radius: 15%;
+    margin-left: 350px;
+    box-shadow: #e68b41 10px 10px 20px;
+    transition: all 3s; 
+    &:hover{
+        box-shadow: #206dd1 20px 20px 30px;
+    }   
+}
+legend {
+    font-weight: bold;
+    color: white;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-width: initial;
+    border-image: initial;
+    input{
+        margin-bottom: 20px;
+        width: 200px;
+        height: 25px;
+    }
+}
+
+textarea{
+    height: 80px;
+    width: 480px;
+    border-width:2px;
+}
+

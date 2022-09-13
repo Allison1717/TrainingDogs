@@ -1,15 +1,17 @@
+@mixin sizes($width, $height, $margin-left) {
+    height: $height;
+    width: $width;
+    margin-left: $margin-left;
+}
+ 
 @media  (max-width: 575.98px) { 
     .card{
-        height: 500px;
-        width: 400px;
-        margin-left: 90px;
+        @include sizes(400px,00px,90px);
     }
 }
 
 @media (min-width: 575.98px) and (max-width: 767.98px) { 
     .card{
-        height: 600px;
-        width: 500px;
-        margin-left: 120px;
+        @include sizes(600px,500px,120px);
     }
 }

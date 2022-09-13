@@ -1,9 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @import "./base/variables";
-@import "./base/extends";
 @import "./components/cards";
 @import "./components/botones";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/index";
-@import "./layout/quienessomos";
+@import "./layout/quienes\ somos";
+@import "./layout/entrenamiento";
+@import "./layout/productos";
+@import "./layout/contactanos";
 

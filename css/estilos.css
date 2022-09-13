@@ -1,15 +1,34 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 @media (max-width: 575.98px) {
   .card {
-    height: 500px;
+    height: 0px;
     width: 400px;
     margin-left: 90px; } }
 
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   .card {
-    height: 600px;
-    width: 500px;
+    height: 500px;
+    width: 600px;
     margin-left: 120px; } }
+
+.botonFormulario {
+  background: #78CDBE;
+  border: .1em solid gray;
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: all 2s; }
+  .botonFormulario:hover {
+    background-color: #e68b41;
+    transform: scale(1.2); }
 
 .btn {
   height: 40px;
@@ -29,7 +48,7 @@ header .navbar {
 header ul li a:hover {
   color: black !important;
   border-radius: 50%;
-  background-image: linear-gradient(to bottom, #b55c5c, #c7725c, #d58a5d, #dda462, #e1bf6c, #dbcb70, #d3d777, #c8e381, #b5e381, #a1e283, #8ae287, #6fe18d); }
+  background-image: linear-gradient(to top, #837f7f, #c9fbff); }
 
 footer .fb, footer .correo, footer .huellitas {
   background-image: url("../Assets/fb.png");
@@ -43,6 +62,20 @@ footer .correo {
 
 footer .huellitas {
   background-image: url("../Assets/huellitas.png"); }
+
+@media (max-width: 575.98px) {
+  .tam-letra-footer {
+    font-size: 12px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .tam-letra-footer {
+    padding: 10px;
+    font-size: 12px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .tam-letra-footer {
+    padding: 15px;
+    font-size: 18px; } }
 
 @-webkit-keyframes pulsate-fwd {
   0% {
@@ -65,20 +98,6 @@ footer .huellitas {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
-
-@media (max-width: 575.98px) {
-  .tam-letra-footer {
-    font-size: 12px; } }
-
-@media (min-width: 575.98px) and (max-width: 767.98px) {
-  .tam-letra-footer {
-    padding: 10px;
-    font-size: 12px; } }
-
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .tam-letra-footer {
-    padding: 15px;
-    font-size: 18px; } }
 
 .imagenInicio {
   background-image: url("../Assets/fondoInicio.jpg");
@@ -191,18 +210,34 @@ footer .huellitas {
   .imagenInicio {
     height: 140vh; } }
 
-footer .fb, footer .correo, footer .huellitas {
-  background-image: url("../Assets/fb.png");
-  width: 80px;
-  height: 80px;
+.bg {
+  background-color: linear-gradient(to top, #837f7f, #c9fbff); }
+
+.anima-quienesomos {
+  background-image: url("../Assets/quienesSomos.jpg");
+  transition: all 2s; }
+  .anima-quienesomos:hover {
+    transform: scale(1.1) translateX(5px); }
+
+.sombra-negra {
+  text-shadow: 0 7px 5px black; }
+
+.letraQuienesSomos {
+  font-family: "Open Sans", cursive;
+  font-weight: normal; }
+
+.letraUbicacion {
+  margin-bottom: 30px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-shadow: 0 7px 7px gray;
+  font-size: 5rem;
+  color: #206dd1; }
+
+.imagenMapa {
+  background-image: url("../Assets/iconoMapa.jpg");
   -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
   animation: pulsate-fwd 1s ease-in-out infinite both; }
-
-footer .correo {
-  background-image: url("../Assets/correo.png"); }
-
-footer .huellitas {
-  background-image: url("../Assets/huellitas.png"); }
 
 @-webkit-keyframes pulsate-fwd {
   0% {
@@ -226,16 +261,115 @@ footer .huellitas {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 
+.anima-mapaPerros {
+  transition: all 2s;
+  -webkit-animation: rotate-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: rotate-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes rotate-in-top {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+@keyframes rotate-in-top {
+  0% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1; } }
+
+.bag {
+  background-image: linear-gradient(to top, #837f7f, #c9fbff); }
+
+.letraTipoEntrenamiento {
+  font-family: "Open Sans", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 0 7px 7px gray; }
+
+.letraCategoríaEntrenamiento {
+  width: 500px;
+  background-color: #4db2e8;
+  border: #4db2e8;
+  border-radius: 90%;
+  font-family: "Open Sans", cursive;
+  text-shadow: 0 7px 7px gray; }
+
+.anima-video {
+  border-radius: 20%;
+  text-align: center;
+  transition: all 2s; }
+  .anima-video:hover {
+    transform: scale(1.1); }
+
 @media (max-width: 575.98px) {
-  .tam-letra-footer {
-    font-size: 12px; } }
+  .letraCategoríaEntrenamiento {
+    margin-left: 150px; }
+  .video {
+    width: 350px;
+    height: 200px; } }
 
-@media (min-width: 575.98px) and (max-width: 767.98px) {
-  .tam-letra-footer {
-    padding: 10px;
-    font-size: 12px; } }
+.bg-fondoProductos {
+  background-image: linear-gradient(to top, #837f7f, #c9fbff); }
+  .bg-fondoProductos .letraCategoríaEntrenamiento {
+    width: 250px;
+    height: 52px;
+    background-color: #9BDC88;
+    border: #9BDC88;
+    border-radius: 90%;
+    font-family: "Comics Sans",cursive;
+    color: white; }
+  .bg-fondoProductos .anima-producto {
+    transition: all 2s; }
+    .bg-fondoProductos .anima-producto:hover {
+      transform: scale(1.1);
+      border: .10cm solid #206dd1; }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .tam-letra-footer {
-    padding: 15px;
-    font-size: 18px; } }
+.bg-fondoContactenos {
+  width: 600px;
+  height: 500px;
+  margin-bottom: 60px;
+  color: white;
+  background-image: url("../Assets/fondoFormulario.jpg");
+  border-radius: 15%;
+  margin-left: 350px;
+  box-shadow: #e68b41 10px 10px 20px;
+  transition: all 3s; }
+  .bg-fondoContactenos:hover {
+    box-shadow: #206dd1 20px 20px 30px; }
+
+legend {
+  font-weight: bold;
+  color: white;
+  padding-inline-start: 5px;
+  padding-inline-end: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-width: initial;
+  border-image: initial; }
+  legend input {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 25px; }
+
+textarea {
+  height: 80px;
+  width: 480px;
+  border-width: 2px; }

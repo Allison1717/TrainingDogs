@@ -1,0 +1,19 @@
+.bg-fondoProductos{
+    background-image: $bg-celeste-plomo;
+    .letraCategoríaEntrenamiento{     
+        width: 250px;
+        height: 52px;    
+        background-color: #9BDC88;
+        border: #9BDC88;          
+        border-radius: 90%;
+        font-family: "Comics Sans",cursive;
+        color: white;
+    }
+    .anima-producto{
+        transition: all 2s;
+        &:hover{
+            transform: scale(1.1);
+            border: .10cm solid #206dd1;
+        }
+    }
+}

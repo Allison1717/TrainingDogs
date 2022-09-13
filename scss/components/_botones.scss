@@ -1,4 +1,17 @@
-
+.botonFormulario{
+    background:#78CDBE;
+    border: .1em solid gray;
+    width:130px;
+    height:40px;
+    font-size: 15px;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: all 2s;
+    &:hover{
+        background-color: #e68b41;
+        transform: scale(1.2);
+    }
+}
 .btn{
     height: 40px;
     width: 170px;

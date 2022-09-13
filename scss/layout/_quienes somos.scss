@@ -1,16 +1,16 @@
+
 .bg{
     background-color: $bg-celeste-plomo;
 }
 
- 
-    .anima-quienesomos{
+.anima-quienesomos{
         background-image: url("../Assets/quienesSomos.jpg");
         transition: all 2s; 
           
         &:hover{
             transform: scale(1.1) translateX(5px);  
         }
-    }
+}
 
     
     .sombra-negra{
@@ -20,27 +20,25 @@
         font-family: $letra-open-sans;
         font-weight: normal; 
     }
-
-section{
+    
     .letraUbicacion{
         margin-bottom: 30px;      
         font-family: $letra-roboto;
         font-weight: bold;
-        text-shadow: 0 7px 5px $color-sombra-subtitulo;
-        font-size: 3rem;
+        text-shadow: 0 7px 7px $color-sombra-subtitulo;
+        font-size: 5rem;
         color: $color-letra-subtitulo;  
     }
     .imagenMapa{        
-        background-image: url("../Assets/iconoMapa.jpg");  
-        width: 90px;
-        height: 80px;
-        -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both   
+        background-image: url("../Assets/iconoMapa.jpg");         
+        -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both 
     }
     @-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
     .anima-mapaPerros{
         transition: all 2s;
         -webkit-animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both
     }
     @-webkit-keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
 
-}
+
