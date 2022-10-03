@@ -51,17 +51,17 @@ header ul li a:hover {
   background-image: linear-gradient(to top, #837f7f, #c9fbff); }
 
 footer .fb, footer .correo, footer .huellitas {
-  background-image: url("../Assets/fb.png");
+  background-image: url("../assets/fb.png");
   width: 80px;
   height: 80px;
   -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
   animation: pulsate-fwd 1s ease-in-out infinite both; }
 
 footer .correo {
-  background-image: url("../Assets/correo.png"); }
+  background-image: url("../assets/correo.png"); }
 
 footer .huellitas {
-  background-image: url("../Assets/huellitas.png"); }
+  background-image: url("../assets/huellitas.png"); }
 
 @media (max-width: 575.98px) {
   .tam-letra-footer {
@@ -237,7 +237,7 @@ footer .huellitas {
   background-color: linear-gradient(to top, #837f7f, #c9fbff); }
 
 .anima-quienesomos {
-  background-image: url("../Assets/quienesSomos.jpg");
+  background-image: url("../assets/quienesSomos.jpg");
   transition: all 2s; }
   .anima-quienesomos:hover {
     transform: scale(1.1) translateX(5px); }
@@ -258,7 +258,7 @@ footer .huellitas {
   color: #206dd1; }
 
 .imagenMapa {
-  background-image: url("../Assets/iconoMapa.jpg");
+  background-image: url("../assets/iconoMapa.jpg");
   -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
   animation: pulsate-fwd 1s ease-in-out infinite both; }
 
@@ -456,7 +456,7 @@ footer .huellitas {
   height: 500px;
   margin-bottom: 60px;
   color: white;
-  background-image: url("../Assets/fondoFormulario.jpg");
+  background-image: url("../assets/fondoFormulario.jpg");
   border-radius: 15%;
   margin-left: 350px;
   box-shadow: #e68b41 10px 10px 20px;
