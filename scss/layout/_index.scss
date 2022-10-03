@@ -2,7 +2,7 @@
             background-image: url("../Assets/fondoInicio.jpg");
             background-size: cover;
             border: .1em solid #815929;    
-            height: 90vh;
+            height: 70vh;
             -webkit-animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in-top 1s cubic-bezier(.39,.575,.565,1.000) both
 }
         
@@ -14,7 +14,7 @@
             margin-left: 200px;
             margin-right: 400px;
             font-weight: 300;    
-            font-size: 18px;           
+            font-size: 1.5rem;           
             transition: all 5s;
 
             &:hover{
@@ -44,7 +44,7 @@
         height: 82vh;
     }
     .letraParrafoInicio{
-        font-size: 12px;
+        font-size: 1rem;
         margin-top: 30px;
         margin-left: 20px;
         margin-right: 140px;
@@ -55,26 +55,56 @@
         height: 100vh;
     }
     .letraParrafoInicio{
-        font-size: 14px;
-        margin-top: 30px;
+        font-size: 12px;
+        margin-top: 40px;
         margin-left: 20px;
-        margin-right: 170px;
+        margin-right: 100px;
     }
 }
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 767.98px) { 
     .imagenInicio{
-        height: 90vh;
+        height: 100vh;
     }
     .letraParrafoInicio{
-        font-size: 14px;
-        margin-top: 30px;
+        font-size: 16px;
+        margin-top: 40px;
         margin-left: 20px;
+        margin-right: 100px;
+    }
+}
+@media (min-width: 767.98px) and  (max-width: 1199.98px) { 
+    .imagenInicio{
+        height: 120vh;
+    }
+    .letraParrafoInicio{
+        font-size: 16px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .imagenInicio{
+        min-height:170vh;
+        max-width: 240vh;
+    }
+    .letraParrafoInicio{
+        font-size: 18px;
+        margin-top: 30px;
+        margin-left: 40px;
         margin-right: 170px;
     }
 }
+
 @media (min-width: 1199.98px) and (max-width: 1399.98px) { 
     .imagenInicio{
-        height: 140vh;
+        height: 120vh;
+        max-width: 1399vw;
+    }
+    .letraParrafoInicio{
+        font-size: 1rem;
+        margin-right: 200px;
     }
 }
 

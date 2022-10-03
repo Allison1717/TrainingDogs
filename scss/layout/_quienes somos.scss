@@ -11,34 +11,83 @@
             transform: scale(1.1) translateX(5px);  
         }
 }
-
+.sombra-negra{
+    text-shadow: 0 7px 5px rgb(0, 0, 0);
+}
+.letraQuienesSomos{
+    font-family: $letra-open-sans;
+    font-weight: normal; 
+}
     
-    .sombra-negra{
-        text-shadow: 0 7px 5px rgb(0, 0, 0);
+.letraUbicacion{
+    margin-bottom: 30px;      
+    font-family: $letra-roboto;
+    font-weight: bold;
+    text-shadow: 0 7px 7px $color-sombra-subtitulo;
+    font-size: 5rem;
+    color: $color-letra-subtitulo;  
+}
+.imagenMapa{        
+    background-image: url("../Assets/iconoMapa.jpg");         
+    -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both 
+}
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+.anima-mapaPerros{
+    transition: all 2s;
+    -webkit-animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-top 2s cubic-bezie(.25,.46,.45,.94) both
+}
+
+@-webkit-keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+
+@mixin sizes-quienes-somos($width) {
+    width: $width;
+}
+@mixin sizes-qsomos($width, $height) {
+    width: $width;
+    height: $height;
+}
+ 
+@media  (max-width: 575.98px) { 
+    .tam-mapa{
+        @include sizes-quienes-somos(519px);
+    }
+    .letraUbicacion{
+        font-size: 2.5rem;  
+    }   
+}
+
+@media (min-width: 575.98px) and (max-width: 767.98px) { 
+    .letraUbicacion{
+        font-size: 2.5rem;  
+    }   
+    .imagenMapa{
+        @include sizes-qsomos(80px,80px);
+    }
+}
+@media (min-width: 767.98px) and (max-width: 1199.98px) { 
+    .imagen-quienes-somos{
+        width: 900px;
+        height: 300px;
+    }
+    .tam-mapa{
+        @include sizes-qsomos(350px,300px);
     }
     .letraQuienesSomos{
-        font-family: $letra-open-sans;
-        font-weight: normal; 
+        font-size: 14px;
     }
-    
+    .tam-razas-perros{
+        @include sizes-qsomos(570px,300px);
+     }
     .letraUbicacion{
-        margin-bottom: 30px;      
-        font-family: $letra-roboto;
-        font-weight: bold;
-        text-shadow: 0 7px 7px $color-sombra-subtitulo;
-        font-size: 5rem;
-        color: $color-letra-subtitulo;  
+        font-size: 2.5rem;  
+    }   
+    .imagenMapa{
+        @include sizes-qsomos(80px,80px);
     }
-    .imagenMapa{        
-        background-image: url("../Assets/iconoMapa.jpg");         
-        -webkit-animation:pulsate-fwd 1s ease-in-out infinite both;animation:pulsate-fwd 1s ease-in-out infinite both 
-    }
-    @-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
-
-    .anima-mapaPerros{
-        transition: all 2s;
-        -webkit-animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-top 2s cubic-bezier(.25,.46,.45,.94) both
-    }
-    @-webkit-keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes rotate-in-top{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotate(0deg);transform:rotate(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
-
-
+}
+@media (min-width: 1199.98px) and (max-width: 1399.98px) { 
+    .letraUbicacion{
+        font-size: 2.5rem;  
+    }  
+}

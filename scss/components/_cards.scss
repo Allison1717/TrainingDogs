@@ -6,12 +6,13 @@
  
 @media  (max-width: 575.98px) { 
     .card{
-        @include sizes(400px,00px,90px);
+        @include sizes(400px,500px,90px);
     }
 }
 
 @media (min-width: 575.98px) and (max-width: 767.98px) { 
     .card{
-        @include sizes(600px,500px,120px);
+        @include sizes(500px,600px,120px);
     }
 }
+

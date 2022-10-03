@@ -5,12 +5,12 @@
     .letraTipoEntrenamiento{
         font-family: $letra-open-sans;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 500;
         text-shadow: 0 7px 7px $color-sombra-subtitulo;
     }
     .letraCategoríaEntrenamiento{   
-        width: 500px;   
+        width: 450px;   
         background-color: #4db2e8;
         border: #4db2e8;          
         border-radius: 90%;
@@ -30,10 +30,31 @@
      
 @media  (max-width: 575.98px) { 
     .letraCategoríaEntrenamiento{
-        margin-left: 150px;
+        margin-left: 30px;
     }
     .video{
-        width: 350px;
-        height: 200px;
+        margin-left: 90px;
+        width: 450px;
+        height: 250px;
+    }
+}
+@media (min-width: 575.98px) and (max-width: 767.98px){
+    .letraCategoríaEntrenamiento{
+        margin-left: 30px;
+    }
+    .video{
+        margin-left: 120px;
+        width: 600px;
+        height: 300px;
+    }
+}
+@media (min-width: 767.98px) and (max-width: 1199.98px){
+    .letraCategoríaEntrenamiento{
+        margin-left: 30px;
+    }
+    .video{
+        margin-left: 30px;
+        width: 220px;
+        height: 250px;
     }
 }

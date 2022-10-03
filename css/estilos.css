@@ -7,14 +7,14 @@
 
 @media (max-width: 575.98px) {
   .card {
-    height: 0px;
+    height: 500px;
     width: 400px;
     margin-left: 90px; } }
 
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   .card {
-    height: 500px;
-    width: 600px;
+    height: 600px;
+    width: 500px;
     margin-left: 120px; } }
 
 .botonFormulario {
@@ -103,7 +103,7 @@ footer .huellitas {
   background-image: url("../Assets/fondoInicio.jpg");
   background-size: cover;
   border: .1em solid #815929;
-  height: 90vh;
+  height: 70vh;
   -webkit-animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
 
@@ -133,7 +133,7 @@ footer .huellitas {
   margin-left: 200px;
   margin-right: 400px;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.5rem;
   transition: all 5s; }
   .letraParrafoInicio:hover {
     -webkit-animation: focus-in-contract-bck 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -183,7 +183,7 @@ footer .huellitas {
   .imagenInicio {
     height: 82vh; }
   .letraParrafoInicio {
-    font-size: 12px;
+    font-size: 1rem;
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 140px; } }
@@ -192,23 +192,46 @@ footer .huellitas {
   .imagenInicio {
     height: 100vh; }
   .letraParrafoInicio {
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 12px;
+    margin-top: 40px;
     margin-left: 20px;
-    margin-right: 170px; } }
+    margin-right: 100px; } }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 767.98px) {
   .imagenInicio {
-    height: 90vh; }
+    height: 100vh; }
   .letraParrafoInicio {
-    font-size: 14px;
-    margin-top: 30px;
+    font-size: 16px;
+    margin-top: 40px;
     margin-left: 20px;
+    margin-right: 100px; } }
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .imagenInicio {
+    height: 120vh; }
+  .letraParrafoInicio {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 80px; } }
+
+@media (min-width: 1199.98px) {
+  .imagenInicio {
+    min-height: 170vh;
+    max-width: 240vh; }
+  .letraParrafoInicio {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 40px;
     margin-right: 170px; } }
 
 @media (min-width: 1199.98px) and (max-width: 1399.98px) {
   .imagenInicio {
-    height: 140vh; } }
+    height: 120vh;
+    max-width: 1399vw; }
+  .letraParrafoInicio {
+    font-size: 1rem;
+    margin-right: 200px; } }
 
 .bg {
   background-color: linear-gradient(to top, #837f7f, #c9fbff); }
@@ -264,7 +287,7 @@ footer .huellitas {
 .anima-mapaPerros {
   transition: all 2s;
   -webkit-animation: rotate-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: rotate-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: rotate-in-top 2s cubic-bezie(0.25, 0.46, 0.45, 0.94) both; }
 
 @-webkit-keyframes rotate-in-top {
   0% {
@@ -294,18 +317,53 @@ footer .huellitas {
     transform-origin: top;
     opacity: 1; } }
 
+@media (max-width: 575.98px) {
+  .tam-mapa {
+    width: 519px; }
+  .letraUbicacion {
+    font-size: 2.5rem; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .letraUbicacion {
+    font-size: 2.5rem; }
+  .imagenMapa {
+    width: 80px;
+    height: 80px; } }
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .imagen-quienes-somos {
+    width: 900px;
+    height: 300px; }
+  .tam-mapa {
+    width: 350px;
+    height: 300px; }
+  .letraQuienesSomos {
+    font-size: 14px; }
+  .tam-razas-perros {
+    width: 570px;
+    height: 300px; }
+  .letraUbicacion {
+    font-size: 2.5rem; }
+  .imagenMapa {
+    width: 80px;
+    height: 80px; } }
+
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .letraUbicacion {
+    font-size: 2.5rem; } }
+
 .bag {
   background-image: linear-gradient(to top, #837f7f, #c9fbff); }
 
 .letraTipoEntrenamiento {
   font-family: "Open Sans", cursive;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   text-shadow: 0 7px 7px gray; }
 
 .letraCategoríaEntrenamiento {
-  width: 500px;
+  width: 450px;
   background-color: #4db2e8;
   border: #4db2e8;
   border-radius: 90%;
@@ -321,10 +379,27 @@ footer .huellitas {
 
 @media (max-width: 575.98px) {
   .letraCategoríaEntrenamiento {
-    margin-left: 150px; }
+    margin-left: 30px; }
   .video {
-    width: 350px;
-    height: 200px; } }
+    margin-left: 90px;
+    width: 450px;
+    height: 250px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .letraCategoríaEntrenamiento {
+    margin-left: 30px; }
+  .video {
+    margin-left: 120px;
+    width: 600px;
+    height: 300px; } }
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .letraCategoríaEntrenamiento {
+    margin-left: 30px; }
+  .video {
+    margin-left: 30px;
+    width: 220px;
+    height: 250px; } }
 
 .bg-fondoProductos {
   background-image: linear-gradient(to top, #837f7f, #c9fbff); }
@@ -341,6 +416,40 @@ footer .huellitas {
     .bg-fondoProductos .anima-producto:hover {
       transform: scale(1.1);
       border: .10cm solid #206dd1; }
+
+@media (max-width: 575.98px) {
+  .col-md-3 {
+    width: 50%; }
+  .card-prod-dest {
+    margin-left: 25px;
+    width: 12rem;
+    height: 20rem; }
+  .col-md-4 {
+    width: 40%; }
+  .card-categoria {
+    margin-left: 25px;
+    width: 10rem;
+    height: 18rem; }
+  .btn {
+    width: 6.7rem;
+    height: 2.3rem; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .col-md-3 {
+    width: 25%; }
+  .card-prod-dest {
+    margin-left: 10px;
+    width: 10rem;
+    height: 18rem; }
+  .col-md-4 {
+    width: 50%; }
+  .card-categoria {
+    margin-left: 15px;
+    width: 14rem;
+    height: 20rem; }
+  .btn {
+    width: 6.7rem;
+    height: 2.3rem; } }
 
 .bg-fondoContactenos {
   width: 600px;
@@ -373,3 +482,26 @@ textarea {
   height: 80px;
   width: 480px;
   border-width: 2px; }
+
+@media (max-width: 575.98px) {
+  .bg-fondoContactenos {
+    width: 470px;
+    margin-left: 50px; }
+  .textarea {
+    max-width: 350px !important;
+    border-width: 2px; } }
+
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .bg-fondoContactenos {
+    width: 550px;
+    margin-left: 100px; } }
+
+@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  .bg-fondoContactenos {
+    width: 550px;
+    margin-left: 100px; } }
+
+@media (min-width: 1199.98px) and (max-width: 1399.98px) {
+  .bg-fondoContactenos {
+    width: 550px;
+    margin-left: 380px; } }
